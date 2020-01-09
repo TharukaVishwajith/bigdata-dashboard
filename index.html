@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Big Data Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body style="padding: 30px;" onload="loadQuestion2Answers()">
+    <div class="panel panel-default">
+        <div class="panel-heading">Total number of rentals that are available 365 days a year</div>
+        <div class="panel-body">Panel Content</div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Number of rentals per neighbourhood_group </div>
+        <div class="panel-body" onload="loadQuestion2Answers()">
+            <canvas id="chart_q2" height="100px"></canvas>
+        </div>
+    </div>
+</body>
+<script src='main.js'></script>
+</html>
