@@ -14,17 +14,49 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
 </head>
-<body style="padding: 30px;" onload="loadQuestion2Answers()">
+<body style="padding: 30px;" onload="loadAnswers()">
     <div class="panel panel-default">
         <div class="panel-heading">Total number of rentals that are available 365 days a year</div>
-        <div class="panel-body">Panel Content</div>
+        <div class="panel-body" id="q1_text"></div>
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">Number of rentals per neighbourhood_group </div>
-        <div class="panel-body" onload="loadQuestion2Answers()">
+        <div class="panel-body">
             <canvas id="chart_q2" height="100px"></canvas>
         </div>
     </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"> Average price of Private room rental by neighbourhood_group  </div>
+        <div class="panel-body">
+            <canvas id="chart_q3" height="100px"></canvas>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Top 10 neighbourhood based on Average price of Private room </div>
+        <div class="panel-body">
+            <div id="table_q4"></div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"> The 5 lowest price rentals per each room_type  </div>
+        <div class="panel-body">
+            <div id="table_q5"></div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"> Percentage of owners who rent more than one property</div>
+        <div class="panel-body">
+            <canvas id="chart_q6" height="100px"></canvas>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Rentals available 365 days for each neighbourhood, which have top 5 average rental price</div>
+        <div class="panel-body">
+            <div id="table_q8"></div>
+        </div>
+    </div>
+    
 </body>
 <script src='main.js'></script>
 </html>
